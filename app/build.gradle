@@ -6,6 +6,7 @@ android {
     namespace 'com.evermine.qrscanner'
     compileSdk 33
 
+
     defaultConfig {
         applicationId "com.evermine.qrscanner"
         minSdk 21
