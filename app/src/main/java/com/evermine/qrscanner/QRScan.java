@@ -67,7 +67,9 @@ public class QRScan extends AppCompatActivity {
                 runOnUiThread(new Runnable() {
                     @Override
                     public void run() {
-                        Toast.makeText(QRScan.this, result.getText(), Toast.LENGTH_SHORT).show();
+                        //Setting text from MainActivity
+                        MainActivity.getContext().setScannedText(result.getText());
+                        finish(); //Finishing the activity
                     }
                 });
             }
